@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Vitor Fernandes</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Vitor Soares Fernandes. My personal homepage with some information about me.">
+    <meta name="author" content="Vitor Soares Fernandes">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131 - Vitor Fernandes</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/vitor-s-fenandes/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p4#p4">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Vitor Soares Fernandes</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <img id="profile-img" src="images/profile.jpg" alt="My profile image.">
+            <p>My name is Vitor. I'm 28 years old. I live in São Paulo, Brazil. I'm married with a Salvadoreña, and I
+                have a daughter
+                called Lily, and she is just awesome.</p>
+            <p>I enjoy movies, TV shows, comic books, videogames, Dungeons &
+                Dragons, and above
+                all, to spend time with my family.</p>
+            <p>I met my wife in an English school called Cumorah Academy in Czech
+                Republic, our
+                first dates were in Prague, that's why it is my favorite city in the world. And also, the temple we
+                visited while we
+                were studying there was the Freiberg Germany Temple.</p>
+            <p>I'm pursuing my bachelors degree in Software
+                Development, and I am
+                very excited to learn more about programming and web design.</p>
+        </section>
+        <section class="card">
+            <h2>São Paulo, Brazil</h2>
+            <p>São Paulo is the most populous and economically important state in Brazil, located in the country's
+                Southeast region.</p>
+            <p>It
+                is home to over 46 million people and produces about one-third of Brazil's GDP. The state is known for
+                its strong
+                industries, finance, technology, agriculture, and international trade.</p>
+            <p>Its capital, São Paulo, is the largest city in the Southern Hemisphere and a major business and cultural
+                hub in Latin
+                America. In addition to its urban centers, the state features beautiful Atlantic coastline, mountains,
+                forests, and
+                productive farmland.</p>
+            <img src="images/sp-brazil-small.jpg"
+                alt="View of the city of São Paulo with a river and a bridge in the middle.">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ⚔️ Vitor Soares Fernandes ⚔️ Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
