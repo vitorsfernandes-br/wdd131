@@ -13,6 +13,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+header {
+    border-bottom: 2px solid grey;
+}
+
 #course-title {
     display: block;
     text-align: center;
