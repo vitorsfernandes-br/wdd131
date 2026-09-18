@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+
+    header {
+        max-width: 100%;
+        padding: 1rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        row-gap: 2rem;
+    }
+
+    h1 {
+        grid-column: 1 / -1;
+        margin-bottom: 0;
+    }
+
+    footer {
+        max-width: 100%;
+    }
+}
