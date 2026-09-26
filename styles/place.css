@@ -1,3 +1,11 @@
+:root {
+    --red: rgb(215, 10, 10);
+    --dark-blue: darkblue;
+    --white: white;
+    --white-transparent: rgb(255, 255, 255, 0.8);
+    --light-red: rgb(249, 37, 37, 0.85);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +17,12 @@ body {
 }
 
 header {
-    background-color: white;
-    color: rgb(215, 10, 10);
+    background-color: var(--white);
+    color: var(--red);
     text-align: center;
     padding: 1rem;
     font-family: "Google Sans", sans-serif;
-    border-bottom: 1rem solid darkblue;
+    border-bottom: 1rem solid var(--dark-blue);
 }
 
 picture {
@@ -26,7 +34,7 @@ picture img {
     display: block;
     width: 100%;
     height: auto;
-    border-bottom: 1rem solid rgb(215, 10, 10);
+    border-bottom: 1rem solid var(--red);
 }
 
 section {
@@ -59,9 +67,9 @@ dd {
 }
 
 footer {
-    border-top: 0.5rem solid darkblue;
-    background-color: rgb(215, 10, 10);
-    color: white;
+    border-top: 0.5rem solid var(--dark-blue);
+    background-color: var(--red);
+    color: var(--white);
     text-align: center;
     padding: 0.8rem;
     margin-top: 2rem;

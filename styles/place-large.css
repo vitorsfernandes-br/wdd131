@@ -14,7 +14,7 @@
     #data {
         position: absolute;
         top: 10px;
-        background-color: rgb(255, 255, 255, 0.8);
+        background-color: var(--white-transparent);
         max-width: 30%;
     }
 
@@ -22,25 +22,17 @@
         position: absolute;
         right: 10px;
         bottom: 50px;
-        background-color: rgb(255, 255, 255, 0.8);
+        background-color: var(--white-transparent);
+    }
+
+    h2 {
+        background-color: var(--light-red);
+        color: var(--white);
     }
 
     #weather h2::after {
         content: " ☀️";
         display: inline;
-    }
-
-    h2 {
-        background-color: rgb(249, 37, 37, 0.85);
-        color: white;
-    }
-
-    .weather-emoji {
-        display: inline;
-    }
-
-    .weather-icon {
-        display: none;
     }
 
     dl {
