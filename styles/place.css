@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: white;
+    color: rgb(215, 10, 10);
+    text-align: center;
+    padding: 1rem;
+    font-family: "Google Sans", sans-serif;
+    border-bottom: 1rem solid darkblue;
+}
+
+picture {
+    display: block;
+    width: 100%;
+}
+
+picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: 1rem solid rgb(215, 10, 10);
+}
+
+section {
+    margin: 1rem;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+#weather h2::after {
+    content: url("../images/sunny.svg");
+    display: block;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+dt {
+    font-weight: bold;
+    text-align: right;
+}
+
+dd {
+    margin: 0;
+}
+
+footer {
+    border-top: 0.5rem solid darkblue;
+    background-color: rgb(215, 10, 10);
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    margin-top: 2rem;
+}

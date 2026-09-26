@@ -1,0 +1,50 @@
+@media screen and (min-width: 600px) {
+    main {
+        position: relative;
+    }
+
+    picture img {
+        border: 0;
+    }
+
+    footer {
+        margin: 0;
+    }
+
+    #data {
+        position: absolute;
+        top: 10px;
+        background-color: rgb(255, 255, 255, 0.8);
+        max-width: 30%;
+    }
+
+    #weather {
+        position: absolute;
+        right: 10px;
+        bottom: 50px;
+        background-color: rgb(255, 255, 255, 0.8);
+    }
+
+    #weather h2::after {
+        content: " ☀️";
+        display: inline;
+    }
+
+    h2 {
+        background-color: rgb(249, 37, 37, 0.85);
+        color: white;
+    }
+
+    .weather-emoji {
+        display: inline;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    dl {
+        padding: 1rem;
+    }
+
+}
