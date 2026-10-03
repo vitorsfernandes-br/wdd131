@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+}
+
+header {
+    background-color: #4b0b72;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem;
+}
+
+header p {
+    font-family: "Google Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#navigation {
+    display: none;
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+}
+
+#navigation.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #4b0b72;
+    border-radius: 4px;
+}
+
+nav a.active {
+    background-color: white;
+    color: #4b0b72;
+    border-radius: 4px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.res-grid section {
+    min-width: 0;
+    padding: 2rem;
+    background-color: rgb(211, 211, 211);
+    border-radius: 3px;
+}
+
+.res-grid img {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 3px;
+    aspect-ratio: 400 / 250;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.res-grid h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.res-grid p {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.label {
+    font-weight: 700;
+    color: #4b0b72;
+}
+
+h1 {
+    font-family: "Google Sans", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #4b0b72;
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+#lastModified {
+    font-size: 0.7rem;
+}

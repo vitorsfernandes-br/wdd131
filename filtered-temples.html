@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples Album</title>
+    <meta name="author" content="Vitor Soares Fernandes">
+    <meta name="description"
+        content="W02 Assignment: Picture Album with temple images using responsive layout with CSS and JS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <p>Temple Album</p>
+
+        <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1 id="page-title">Home</h1>
+        <div class="res-grid">
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ⚔️ Vitor Soares Fernandes ⚔️ Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
