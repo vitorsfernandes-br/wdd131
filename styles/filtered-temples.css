@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #4b0b72;
+    --white: #ffffff;
+    --light-gray: #d3d3d3;
+    --black: #000000;
+    --shadow: rgba(0, 0, 0, 0.5);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +18,8 @@ body {
 }
 
 header {
-    background-color: #4b0b72;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white);
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
@@ -27,7 +35,7 @@ header p {
 #menu-button {
     background: none;
     border: none;
-    color: white;
+    color: var(--white);
     font-size: 2rem;
     cursor: pointer;
 }
@@ -50,21 +58,21 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-size: 1rem;
 }
 
 nav a:hover {
-    background-color: white;
-    color: #4b0b72;
+    background-color: var(--white);
+    color: var(--primary-color);
     border-radius: 4px;
 }
 
 nav a.active {
-    background-color: white;
-    color: #4b0b72;
+    background-color: var(--white);
+    color: var(--primary-color);
     border-radius: 4px;
 }
 
@@ -83,7 +91,7 @@ main {
 .res-grid section {
     min-width: 0;
     padding: 2rem;
-    background-color: rgb(211, 211, 211);
+    background-color: var(--light-gray);
     border-radius: 3px;
 }
 
@@ -94,13 +102,13 @@ main {
     display: block;
     border-radius: 3px;
     aspect-ratio: 400 / 250;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 8px var(--shadow);
 }
 
 .res-grid h2 {
     text-align: center;
     margin-bottom: 1rem;
-    color: black;
+    color: var(--black);
     font-size: 1.2rem;
 }
 
@@ -112,7 +120,7 @@ main {
 
 .label {
     font-weight: 700;
-    color: #4b0b72;
+    color: var(--primary-color);
 }
 
 h1 {
@@ -123,8 +131,8 @@ h1 {
 }
 
 footer {
-    background-color: #4b0b72;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white);
     text-align: center;
     padding: 0.8rem;
     margin-top: 2rem;
