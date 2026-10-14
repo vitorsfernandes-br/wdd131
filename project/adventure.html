@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vitor Soares Fernandes">
+    <meta name="description"
+        content="Begin your adventure in The Lich's Tower. Create your hero, choose equipment, and explore a mysterious fantasy world.">
+    <title>The Lich's Tower | Adventure</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/game.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="site-logo">
+                The Lich's Tower
+            </a>
+
+            <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="navigation">
+                &#9776;
+            </button>
+
+            <nav id="navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="how-to-play.html">How to Play</a>
+                <a href="adventure.html" aria-current="page">Adventure</a>
+                <a href="chronicle.html">Chronicle</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-page">
+        <h1>Your Adventure</h1>
+
+        <section id="saved-adventure" class="game-panel" hidden>
+            <h2>Your Journey Awaits</h2>
+
+            <p id="saved-message"></p>
+
+            <div class="save-actions">
+                <button id="continue-button" class="button" type="button">
+                    Continue Adventure
+                </button>
+
+                <button id="new-game-button" class="button" type="button">
+                    Start New Adventure
+                </button>
+            </div>
+        </section>
+
+        <section id="character-creation" class="game-panel">
+            <h2>Prepare Your Adventure</h2>
+
+            <p>
+                Before entering the tower, choose your hero's name
+                and two pieces of equipment. Choose wisely, as your
+                items will affect the decisions you can make.
+            </p>
+
+            <form id="character-form">
+                <div class="form-field">
+                    <label for="hero-name">Hero's Name</label>
+                    <input type="text" id="hero-name" name="hero-name" maxlength="30" autocomplete="off" required>
+                </div>
+
+                <fieldset>
+                    <legend>Choose exactly two items</legend>
+
+                    <label class="equipment-option">
+                        <input type="checkbox" name="equipment" value="sword">
+                        Holy Sword
+                    </label>
+
+                    <label class="equipment-option">
+                        <input type="checkbox" name="equipment" value="potion">
+                        Invisibility Potion
+                    </label>
+
+                    <label class="equipment-option">
+                        <input type="checkbox" name="equipment" value="enchantment">
+                        Enchantment
+                    </label>
+                </fieldset>
+
+                <p id="equipment-count" aria-live="polite">
+                    0 of 2 items selected
+                </p>
+
+                <button type="submit" class="button">
+                    Begin Adventure
+                </button>
+            </form>
+        </section>
+
+        <section id="game-area" class="game-panel" hidden>
+            <h2 id="scene-title">The Tower</h2>
+
+            <p id="scene-description"></p>
+
+            <form id="riddle-form" hidden>
+                <label for="riddle-answer">
+                    Your Answer
+                </label>
+
+                <input type="text" id="riddle-answer" name="riddle-answer" maxlength="30" autocomplete="off" required>
+
+                <button type="submit" class="button">
+                    Speak Your Answer
+                </button>
+            </form>
+
+
+            <div id="scene-choices"></div>
+
+            <div class="game-status">
+                <h3>Your Equipment</h3>
+                <p id="player-equipment"></p>
+
+                <h3>Discoveries</h3>
+                <p id="player-discoveries"></p>
+
+                <h3>Consequences</h3>
+                <p id="game-consequences" aria-live="polite"></p>
+            </div>
+
+            <button id="restart-button" class="button" type="button" hidden>
+                Start New Adventure
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            | The Lich's Tower | Vitor Soares Fernandes
+        </p>
+
+        <a href="references.html">References</a>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

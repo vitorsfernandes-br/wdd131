@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vitor Soares Fernandes">
+    <meta name="description"
+        content="Review your hero's equipment, discoveries, current location, and progress in The Lich's Tower.">
+    <title>The Lich's Tower | Chronicle</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/chronicle.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="site-logo">
+                The Lich's Tower
+            </a>
+
+            <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="navigation">
+                &#9776;
+            </button>
+
+            <nav id="navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="how-to-play.html">How to Play</a>
+                <a href="adventure.html">Adventure</a>
+                <a href="chronicle.html" aria-current="page">Chronicle</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-page">
+        <h1>The Chronicle</h1>
+
+        <p class="chronicle-intro">
+            Every adventure leaves a story behind.
+            Here you can review your journey through the tower.
+        </p>
+
+        <section id="empty-chronicle" class="game-panel" hidden>
+            <h2>Your Story Has Not Begun</h2>
+
+            <p>
+                The pages of your chronicle are still empty.
+                Somewhere beyond the dark forest, the tower awaits.
+            </p>
+
+            <a href="adventure.html" class="button">
+                Begin Your Adventure
+            </a>
+        </section>
+
+        <section id="chronicle-content" class="game-panel" hidden>
+            <h2>Your Hero</h2>
+
+            <dl class="chronicle-details">
+                <div>
+                    <dt>Hero's Name</dt>
+                    <dd id="chronicle-name"></dd>
+                </div>
+
+                <div>
+                    <dt>Current Location</dt>
+                    <dd id="chronicle-location"></dd>
+                </div>
+
+                <div>
+                    <dt>Equipment</dt>
+                    <dd id="chronicle-equipment"></dd>
+                </div>
+
+                <div>
+                    <dt>Discoveries</dt>
+                    <dd id="chronicle-discoveries"></dd>
+                </div>
+
+                <div>
+                    <dt>Adventure Status</dt>
+                    <dd id="chronicle-status"></dd>
+                </div>
+            </dl>
+
+            <a href="adventure.html" id="chronicle-continue" class="button">
+                Continue Adventure
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            | The Lich's Tower | Vitor Soares Fernandes
+        </p>
+
+        <a href="references.html">References</a>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

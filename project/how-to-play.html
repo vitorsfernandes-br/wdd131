@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vitor Soares Fernandes">
+    <meta name="description"
+        content="Learn how to play The Lich's Tower, choose your equipment, make decisions, and discover different endings.">
+    <title>The Lich's Tower | How to Play</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="site-logo">
+                The Lich's Tower
+            </a>
+
+            <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="navigation">
+                &#9776;
+            </button>
+
+            <nav id="navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="how-to-play.html" aria-current="page">How to Play</a>
+                <a href="adventure.html">Adventure</a>
+                <a href="chronicle.html">Chronicle</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-page">
+        <h1>How to Play</h1>
+
+        <section class="guide-section">
+            <h2>Welcome, Adventurer!</h2>
+            <p>
+                The Lich's Tower is an interactive text adventure.
+                You will explore a mysterious tower, face dangerous
+                creatures, and make decisions that change the story.
+            </p>
+            <p>
+                Read each scene carefully and choose what your
+                character should do next. There are different paths
+                to explore and multiple endings to discover.
+            </p>
+        </section>
+
+        <section class="guide-section">
+            <h2>Create Your Character</h2>
+            <p>
+                Before entering the tower, you will choose a name
+                for your hero and select two starting items.
+                Each item provides different opportunities
+                during your adventure.
+            </p>
+            <p>
+                Choose carefully! You will not be able to carry
+                all three items at the beginning of the game.
+            </p>
+        </section>
+
+        <section class="guide-section">
+            <h2>Your Equipment</h2>
+
+            <div class="equipment-grid">
+                <article class="equipment-card">
+                    <h3>Holy Sword</h3>
+                    <p>
+                        A blessed weapon capable of fighting
+                        dark creatures. It may help you survive
+                        dangerous encounters.
+                    </p>
+                </article>
+
+                <article class="equipment-card">
+                    <h3>Invisibility Potion</h3>
+                    <p>
+                        A magical potion that allows you to
+                        become invisible for a short time.
+                        It can help you avoid enemies, but
+                        it can only be used once.
+                    </p>
+                </article>
+
+                <article class="equipment-card">
+                    <h3>Enchantment</h3>
+                    <p>
+                        A magical spell that can help you
+                        overcome certain obstacles and
+                        protect yourself from danger.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="guide-section">
+            <h2>Choices and Consequences</h2>
+            <p>
+                Your decisions matter. Some actions require
+                specific equipment, while others depend on
+                what you discovered earlier in the story.
+            </p>
+            <p>
+                Your equipment may be used, lost, or changed
+                during the adventure. Sometimes, words can
+                be more powerful than weapons.
+            </p>
+        </section>
+
+        <section class="guide-section">
+            <h2>Saving Your Progress</h2>
+            <p>
+                Your adventure will be saved in your browser.
+                You can visit the Chronicle page to review
+                your progress and continue your journey later.
+            </p>
+            <p>
+                Your saved progress is stored on your current
+                browser and device.
+            </p>
+        </section>
+
+        <div class="page-action">
+            <a href="adventure.html" class="button">
+                Begin Your Adventure
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            | The Lich's Tower | Vitor Soares Fernandes
+        </p>
+
+        <a href="references.html">References</a>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

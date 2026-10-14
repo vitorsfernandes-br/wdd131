@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vitor Soares Fernandes">
+    <meta name="description"
+        content="Enter The Lich's Tower, an interactive fantasy adventure where your choices shape the story. Explore a mysterious tower and rescue a kidnapped princess.">
+    <title>The Lich's Tower | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="site-logo">
+                The Lich's Tower
+            </a>
+
+            <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="navigation">
+                &#9776;
+            </button>
+
+            <nav id="navigation" aria-label="Main navigation">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="how-to-play.html">How to Play</a>
+                <a href="adventure.html">Adventure</a>
+                <a href="chronicle.html">Chronicle</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Enter the Tower</h1>
+
+                <p>
+                    A dark secret awaits within the ancient tower.
+                    Your choices will determine the fate of a
+                    kidnapped princess and the powerful Lich
+                    who holds her captive.
+                </p>
+
+                <a href="adventure.html" class="button">
+                    Start Adventure
+                </a>
+            </div>
+        </section>
+
+        <section class="story-section">
+            <h2>The Story</h2>
+
+            <p>
+                Long ago, a powerful wizard lost someone he loved.
+                Unable to accept his loss, he turned to forbidden
+                magic and became a Lich.
+            </p>
+
+            <p>
+                Now, a princess has disappeared, and a dark ritual
+                threatens her life. You must enter the tower,
+                uncover its secrets, and decide how the story ends.
+            </p>
+        </section>
+
+        <section class="how-section">
+            <h2>How to Play</h2>
+
+            <div class="features">
+                <article>
+                    <h3>Make Choices</h3>
+                    <p>
+                        Every decision can change your adventure.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Use Equipment</h3>
+                    <p>
+                        Choose your starting items and use them wisely.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Discover Endings</h3>
+                    <p>
+                        Explore different paths and discover
+                        how your story ends.
+                    </p>
+                </article>
+            </div>
+
+            <a href="how-to-play.html" class="text-link">
+                Learn How to Play
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            | The Lich's Tower | Vitor Soares Fernandes
+        </p>
+
+        <a href="references.html">References</a>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
